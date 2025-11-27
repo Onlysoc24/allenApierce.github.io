@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Allen A Pierce | Portfolio</title>
+    <!-- External CSS link -->
+    <link rel="stylesheet" href="css\style.css" />
+    <!-- Font Awesome and Google Font links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Allen<span class="text-blue-600">.</span></h1>
+            <nav class="nav" id="main-nav">
+                <!-- Data-page attributes are used for JS active state tracking -->
+                <a href="#home" class="nav-link" data-page="home">Home</a>
+                <a href="#about" class="nav-link" data-page="about">About</a>
+                <a href="#contact" class="nav-link" data-page="contact">Contact</a>
+            </nav>
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="page">
+            <div class="container">
+                <div class="hero-layout">
+                    <div class="hero-text">
+                        <h2>Hi, I'm <span class="text-blue-600">Allen A. Pierce</span></h2>
+                        <h3>Junior Front-end Developer</h3>
+                        <p>Building beautiful, responsive web experiences with passion and clean code.</p>
+                        <div class="socials">
+                            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                        <button id="viewAboutModalBtn" class="btn-primary">
+                            Learn More About Me
+                        </button>
+                    </div>
+                    <div class="hero-img">
+                        <!-- Placeholder image URL -->
+                        <img src="profile.jpg" alt="Allen Pierce Profile Photo" id="profilePhoto" onerror="this.onerror=null; this.src='https://placehold.co/300x300/e0f2f1/1f2937?text=Profile';" />
+                    </div>
+                </div>
+
+                <div class="projects">
+                    <h2>My Projects</h2>
+                    <div class="project-grid">
+                        
+                        <!-- Project 1: E-Commerce Platform -->
+                        <div class="project-card">
+                            <div class="card-img">
+                                <img src="ecommerce.jpg" alt="E-Commerce Platform Screenshot" onerror="this.onerror=null; this.src='https://placehold.co/300x150/bfdbfe/1e40af?text=E-Commerce';" />
+                            </div>
+                            <h3>E-Commerce Platform</h3>
+                            <p>React + Node.js full-stack app</p>
+                        </div>
+
+                        <!-- Project 2: Task Manager -->
+                        <div class="project-card">
+                            <div class="card-img">
+                                <img src="allen.jpg" alt="Task Manager Screenshot" onerror="this.onerror=null; this.src='https://placehold.co/300x150/bfdbfe/1e40af?text=Task+Manager';" />
+                            </div>
+                            <h3>Task Manager</h3>
+                            <p>Vue.js + Firebase</p>
+                        </div>
+
+                        <!-- Project 3: Weather Dashboard (using specified relative path) -->
+                        <div class="project-card">
+                            <div class="card-img">
+                                <img src="price_heatmap_city_region.png" alt="Weather Dashboard Screenshot" onerror="this.onerror=null; this.src='https://placehold.co/300x150/bfdbfe/1e40af?text=Weather+Dashboard';" />
+                            </div>
+                            <h3>Weather Dashboard</h3>
+                            <p>Vanilla JS + API</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="page">
+            <div class="container about-container">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <div class="about-img">
+                         <!-- Placeholder image URL -->
+                        <img src="profile.jpg" alt="About me" onerror="this.onerror=null; this.src='https://placehold.co/250x250/e0f2f1/1f2937?text=About';" />
+                    </div>
+                    <div>
+                        <h3>Creative Developer from Liberia, Starz University</h3>
+                        <p>I love turning ideas into reality using clean, efficient code and modern technologies. My focus is on creating responsive, accessible, and high-performance user interfaces.</p>
+                        <p>Passionate about continuous learning and contributing to open-source projects. Always looking for the next challenge in web development!</p>
+                        <div class="skills">
+                            <span>HTML5</span>
+                            <span>CSS3 / Vanilla CSS</span>
+                            <span>JavaScript (ES6+)</span>
+                            <span>React</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="page">
+            <div class="container contact-container">
+                <h2>Get In Touch</h2>
+                <p>Have a project idea or just want to chat? Send me a message!</p>
+                <form id="contactForm">
+                    <input type="text" placeholder="Your Name" required />
+                    <input type="email" placeholder="Your Email" required />
+                    <textarea placeholder="Your Message" rows="6" required></textarea>
+                    <button type="submit" class="btn-primary">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Allen A. Pierce. All rights reserved.</p>
+            <div class="socials">
+                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- About Modal -->
+    <div id="aboutModal" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal="aboutModal">&times;</span>
+            <div style="text-align: center;">
+                 <!-- Placeholder image URL -->
+                <img src="profile.jpg" alt="Allen Pierce large" onerror="this.onerror=null; this.src='https://placehold.co/150x150/e0f2f1/1f2937?text=Allen';" />
+                <h2 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Hello! I am Allen A Pierce</h2>
+                <p style="color: #4b5563; margin-bottom: 1rem;">I'm a passionate front-end developer who loves clean code, beautiful design, and solving real-world problems. When I'm not coding, you'll find me playing musical instruments like guitar, flutes, drum or piano, reading sci-fi, or experimenting with new frameworks.</p>
+                <div class="modal-skills">
+                    <strong>Core Tech Stack:</strong> HTML • CSS • Javascript • React • Node.js
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Submission Success/Confirmation Modal -->
+    <div id="statusModal" class="modal">
+        <div class="modal-content confirm">
+            <span class="close" data-modal="statusModal">&times;</span>
+            <h3 class="status-title" id="statusModalTitle">Message Sent!</h3>
+            <p id="statusModalMessage" style="margin-bottom: 1.5rem;">Thank you for reaching out. I will get back to you shortly.</p>
+            <button id="closeStatusBtn" class="btn-primary">Close</button>
+        </div>
+    </div>
+
+    <!-- External JavaScript link -->
+    <script src="js\script.js"></script>
+</body>
+</html>
